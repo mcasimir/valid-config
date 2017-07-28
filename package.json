@@ -1,0 +1,39 @@
+{
+  "name": "valid-config",
+  "version": "1.0.0",
+  "description": "Define and validate configuration with json schema",
+  "main": "index.js",
+  "scripts": {
+    "depcheck": "npm-run-series depcheck:ci depcheck:nsp",
+    "depcheck:ci": "depcheck-ci",
+    "depcheck:nsp": "nsp check --output summary",
+    "lint": "eslint . --quiet",
+    "test": "nyc npm run test:nocov",
+    "test:nocov": "mocha --timeout 10000 'src/**/*.spec.js'",
+    "test:ci": "npm-run-series lint depcheck test"
+  },
+  "precommit": "test:ci",
+  "author": "maurizio.cas@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "5.2.2",
+    "confine": "3.1.0",
+    "convict": "4.0.0",
+    "json-schema-defaults": "0.3.0",
+    "json-schema-sugar": "1.1.0",
+    "lodash": "4.17.4"
+  },
+  "devDependencies": {
+    "depcheck-ci": "1.0.1",
+    "dotenv-cli": "1.4.0",
+    "eslint": "3.19.0",
+    "eslint-config-google": "0.7.1",
+    "eslint-plugin-mocha": "4.9.0",
+    "eslint-plugin-no-async-without-await": "1.2.0",
+    "mocha": "3.2.0",
+    "npm-run-series": "1.0.0",
+    "nsp": "2.6.3",
+    "nyc": "10.2.0",
+    "pre-commit": "1.2.2"
+  }
+}

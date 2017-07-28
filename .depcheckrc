@@ -1,0 +1,13 @@
+{
+  "ignore": [
+    "pre-commit"
+  ],
+  "ignoreDirs": [
+    "node_modules",
+    "public",
+    ".nyc_output",
+    ".git",
+    "coverage",
+    "backups"
+  ]
+}
