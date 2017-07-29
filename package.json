@@ -1,6 +1,6 @@
 {
   "name": "valid-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Define and validate configuration with json schema",
   "main": "index.js",
   "scripts": {
