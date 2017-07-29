@@ -20,8 +20,7 @@
     "ajv": "5.2.2",
     "confine": "3.1.0",
     "json-schema-defaults": "0.3.0",
-    "lodash": "4.17.4",
-    "release-flow": "1.2.1"
+    "lodash": "4.17.4"
   },
   "devDependencies": {
     "depcheck-ci": "1.0.1",
@@ -33,6 +32,7 @@
     "npm-run-series": "1.0.0",
     "nsp": "2.6.3",
     "nyc": "10.2.0",
-    "pre-commit": "1.2.2"
+    "pre-commit": "1.2.2",
+    "release-flow": "1.2.1"
   }
 }
