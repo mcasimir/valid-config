@@ -20,7 +20,7 @@
     "ajv": "5.2.2",
     "confine": "3.1.0",
     "json-schema-defaults": "0.3.0",
-    "lodash": "4.17.4"
+    "lodash": "4.17.10"
   },
   "devDependencies": {
     "depcheck-ci": "1.0.1",
